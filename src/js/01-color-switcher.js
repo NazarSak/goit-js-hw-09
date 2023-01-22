@@ -15,7 +15,7 @@ function getRandomHexColor() {
 // слухачі 
 start.addEventListener("click",continueChanging)
 stop.addEventListener("click",stopInterval)
-  
+
 
 
 // general
@@ -31,8 +31,10 @@ function bakroundTime () {
 function continueChanging () {
     if (!timeBac) {
         timeBac = setInterval(bakroundTime,1000);
+      
     }
-     
+    start.toggleAttribute("disabled"); 
+
 }
 
 function stopInterval () {
